@@ -1,6 +1,6 @@
 const { Plugin } = require('powercord/entities');
 
-module.exports = class PrivacyTab extends Plugin {
+module.exports = class ScalableDiscord extends Plugin {
 
 	startPlugin() {
 		this.loadStylesheet('style.scss');
