@@ -1,0 +1,27 @@
+@media only screen and (max-width: 940px) {
+
+	.unblur {
+		filter: none;
+		pointer-events: all !important;
+	}
+
+	:not(.channel-stretched).sidebar-2K8pFh {
+		display:none;
+	}
+
+	.channel-stretched {
+		width: 100%;
+	}
+
+	:not(.BF-folderSidebar) > * >  :not(.server-disabled).tree-3tCaw8 {
+		pointer-events: none;
+	}
+
+	:not(.BF-folderSidebar) >:not(.undarken).guilds-1SWlCJ {
+		filter: blur(10px);
+	}
+
+	.channel-stretched > nav > div > div > a {
+		max-width: none;
+	}
+}
