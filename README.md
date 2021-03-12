@@ -25,6 +25,7 @@ default discord minimum width and height, allowing this plugin to work.
 If you cannot find your `settings.json`, look in:
  - Linux: `~/.config/discordcanary/settings.json`
  - Windows: `%appdata%/discordcanary/settings.json`
+ - macOS: `~/Library/Application Support/discordcanary`
 
 Please report any bugs, incompatabilities with powercord plugins, etc within Issues
 
