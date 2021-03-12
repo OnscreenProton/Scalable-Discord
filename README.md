@@ -30,7 +30,7 @@ Please report any bugs, incompatabilities with powercord plugins, etc within Iss
 
 ## Preview
 
-![Preview](https://downloadmoredownloads.download/i/yz40vnzn.gif)
+![Preview](https://downloadmoredownloads.download/i/puwu4ur8.gif)
 
 ## Installation
 Install this plugin into your Powercord plugins folder.
