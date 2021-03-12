@@ -33,7 +33,7 @@ Please report any bugs, incompatabilities with powercord plugins, etc within Iss
 ![Preview](https://downloadmoredownloads.download/i/yz40vnzn.gif)
 
 ## Installation
-
+Install this plugin into your Powercord plugins folder.
 ```
 git clone https://github.com/j0lol/Scalable-Discord
 ```
