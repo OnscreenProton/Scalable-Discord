@@ -10,6 +10,10 @@ module.exports = class ScalableDiscord extends Plugin {
 
 	}
 
+	pluginWillUnload() {
+		document.body.removeEventListener("click", this.handleClick);
+	}
+
 	handleClick(element) {
 		element.path.forEach((a) => {
 			try {
