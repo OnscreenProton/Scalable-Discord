@@ -25,9 +25,9 @@ module.exports = class ScalableDiscord extends Plugin {
 					if (b === "content-1x5b-n" || b === "channel-2QD9_O") {
 						channelBar.classList.remove('channel-shown');
 						serverBarChild.classList.remove('server-disabled');						
-						serverBarChildBETTERFOLDERS.classList.remove('server-disabled');
+						//serverBarChildBETTERFOLDERS.classList.remove('server-disabled');
 						serverBar.classList.remove('undarken');
-						serverBarBETTERFOLDERS.classList.remove('undarken');
+						//serverBarBETTERFOLDERS.classList.remove('undarken');
 						chatBar.classList.remove('chat-hidden');
 						channelBar.classList.remove('channel-stretched');
 					}
@@ -35,8 +35,8 @@ module.exports = class ScalableDiscord extends Plugin {
 						channelBar.classList.add('channel-shown');
 						serverBarChild.classList.add('server-disabled');
 						serverBar.classList.add('undarken');
-						serverBarChildBETTERFOLDERS.classList.add('server-disabled');
-						serverBarBETTERFOLDERS.classList.add('undarken');
+						//serverBarChildBETTERFOLDERS.classList.add('server-disabled');
+						//serverBarBETTERFOLDERS.classList.add('undarken');
 						chatBar.classList.add('chat-hidden');
 						channelBar.classList.add('channel-stretched');
 					}
