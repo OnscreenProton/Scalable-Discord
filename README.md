@@ -39,5 +39,9 @@ git clone https://github.com/j0lol/Scalable-Discord
 ```
 
 ## TODO
-- Animations like mobile discord
-- Better scalability for other parts of Discord
+- [x] Animations like mobile discord
+- [ ] Better scalability for other parts of Discord
+    - [x] Add settings support
+    - [ ] Add friends tab support (current impl is broken)
+    - [ ] Add nitro tab support (current impl is broken)
+    

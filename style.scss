@@ -6,8 +6,19 @@
 	}
 
 	:not(.channel-stretched).sidebar-2K8pFh {
-		display:none;
+		display: flex;
+		position: absolute;
+		z-index: 0;
+		width: 100vw;
+		height: 100%;
 	}
+	:not(.channel-stretched).sidebar-2K8pFh > .container-3baos1 > .panels-j1Uci {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+	}
+
+	// TODO: cleanup this terrible code, turn like 5 variables into one
 
 	.channel-stretched {
 		width: 100%;
@@ -16,12 +27,91 @@
 	:not(.server-disabled).tree-3tCaw8 {
 		pointer-events: none;
 	}
-
-	:not(.undarken).guilds-1SWlCJ {
-		filter: blur(10px);
+	
+	// Dark filter on select when chat is open(ing)
+	:not(.undarken).guilds-1SWlCJ, :not(.undarken).guilds-1SWlCJ ~ .base-3dtUhz > .content-98HsJk > .sidebar-2K8pFh {
+		filter: brightness(60%);
 	}
+	// Box shadow on chat when open(ing)
+	:not(.undarken).guilds-1SWlCJ ~ .base-3dtUhz > .content-98HsJk > .chat-3bRxxu{
+		//box-shadow: -20px 0px 20px 10px rgba(255,0,0,0.5);
 
+	}
+	
 	.channel-stretched > nav > div > div > a {
 		max-width: none;
 	}
+	html.reduce-motion :not(.chat-hidden).chat-3bRxxu {
+		transition: transform 0s !important;
+	}
+	:not(.chat-hidden).chat-3bRxxu {
+		transform: translate(0vw);
+		transition: transform 0.2s;
+		z-index: 99;
+		//filter: opacity(0.8);
+	}
+	html.reduce-motion .chat-hidden.chat-3bRxxu {
+		transition: transform 0s;
+	}
+	.chat-hidden.chat-3bRxxu {
+		//display:block;
+		position:absolute;
+		top: 0px;
+ 		left: 0px;
+    		right: 0px;
+    		z-index: 99;
+    		height: 100vh;
+    		width: 100vw;
+		transform: translate(100vw);
+		transition: transform 0.2s;
+	}
+	
+	
+	/* SCALABLE SETTINGS */
+	.layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e {
+    		width: 100%;
+	}
+
+	html.reduce-motion .contentRegion-3nDuYy {
+		transition: transform 0s !important;
+	}
+	.contentRegion-3nDuYy {
+		position:absolute;
+		top: 0px;
+		left: 20px;
+		right: 0px;
+		z-index: 99999;
+		height: 100vh;
+		width: 100vw;
+		transform: translate(100vw);
+		transition: transform 0.2s;
+	}
+
+	html.reduce-motion .layer-3QrUeG[aria-label="USER_SETTINGS"].settings-contentshowing .contentRegion-3nDuYy {
+		transition: transform 0s !important;
+	}
+	.layer-3QrUeG[aria-label="USER_SETTINGS"].settings-contentshowing .contentRegion-3nDuYy {
+		transform: translate(3vw);
+		transition: transform 0.2s;
+		z-index: 99;
+		//filter: opacity(0.8);
+	}
+
+	.layer-3QrUeG[aria-label="USER_SETTINGS"].settings-contentshowing .side-8zPYf6 {
+		pointer-events: none;
+
+	}
+	.layer-3QrUeG[aria-label="USER_SETTINGS"].settings-contentshowing .sidebar-CFHs9e {
+		filter: brightness(60%);
+
+	}
+
+
+
 }
+
+
+/*
+		transform: translate(500px);
+		display: block;
+		*/
