@@ -38,3 +38,6 @@ Install this plugin into your Powercord plugins folder.
 ```
 git clone https://github.com/j0lol/Scalable-Discord
 ```
+
+## Wallpaper
+people keep asking for it so [here you go](https://downloadmoredownloads.download/i/az3w1vpd.png), you can find [the uncropped version here, but it looks like you need to pay or something for wallpaper quality](https://www.artstation.com/artwork/QR6eB)
