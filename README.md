@@ -27,6 +27,8 @@ If you cannot find your `settings.json`, look in:
  - Windows: `%appdata%/discordcanary/settings.json`
  - macOS: `~/Library/Application Support/discordcanary`
 
+This fix originates from this reddit comment, made by a discord developer. This workaround for ages but could be removed at any time.
+
 Please report any bugs, incompatabilities with powercord plugins, etc within Issues
 
 ## Preview
