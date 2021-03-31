@@ -18,7 +18,7 @@
 		top: 0;
 	}
 
-	// TODO: cleanup this terrible code, turn like 5 variables into one
+	// TODO: cleanup this terrible code, turn like 5 variables into one (like settings)
 
 	.channel-stretched {
 		width: 100%;
@@ -50,25 +50,51 @@
 		z-index: 99;
 		//filter: opacity(0.8);
 	}
+
+	html.reduce-motion :not(.chat-hidden).container-1D34oG {
+		transition: transform 0s !important;
+	}
+	:not(.chat-hidden).container-1D34oG {
+		transform: translate(0vw);
+		transition: transform 0.2s;
+		z-index: 99;
+		//filter: opacity(0.8);
+	}
+
 	html.reduce-motion .chat-hidden.chat-3bRxxu {
 		transition: transform 0s;
 	}
 	.chat-hidden.chat-3bRxxu {
 		//display:block;
 		position:absolute;
-		top: 0px;
- 		left: 0px;
-    		right: 0px;
+		top: 0;
+ 		left: 0;
+    		right: 0;
     		z-index: 99;
     		height: 100vh;
     		width: 100vw;
 		transform: translate(100vw);
 		transition: transform 0.2s;
 	}
+	html.reduce-motion .chat-hidden.container-1D34oG {
+		transition: transform 0s;
+	}
+	.chat-hidden.container-1D34oG {
+		//display:block;
+		position:absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 99;
+		height: 100vh;
+		width: 100vw;
+		transform: translate(100vw);
+		transition: transform 0.2s;
+	}
 	
 	
 	/* SCALABLE SETTINGS */
-	.layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e {
+	.layer-3QrUeG .sidebar-CFHs9e, .layer-3QrUeG .sidebar-CFHs9e {
     		width: 100%;
 	}
 
@@ -77,9 +103,9 @@
 	}
 	.contentRegion-3nDuYy {
 		position:absolute;
-		top: 0px;
+		top: 0;
 		left: 20px;
-		right: 0px;
+		right: 0;
 		z-index: 99999;
 		height: 100vh;
 		width: 100vw;
@@ -87,31 +113,28 @@
 		transition: transform 0.2s;
 	}
 
-	html.reduce-motion .layer-3QrUeG[aria-label="USER_SETTINGS"].settings-contentshowing .contentRegion-3nDuYy {
+	html.reduce-motion .layer-3QrUeG.settings-contentshowing .contentRegion-3nDuYy {
 		transition: transform 0s !important;
 	}
-	.layer-3QrUeG[aria-label="USER_SETTINGS"].settings-contentshowing .contentRegion-3nDuYy {
+	.layer-3QrUeG.settings-contentshowing .contentRegion-3nDuYy {
 		transform: translate(3vw);
 		transition: transform 0.2s;
 		z-index: 99;
 		//filter: opacity(0.8);
 	}
 
-	.layer-3QrUeG[aria-label="USER_SETTINGS"].settings-contentshowing .side-8zPYf6 {
+	.layer-3QrUeG.settings-contentshowing .side-8zPYf6 {
 		pointer-events: none;
 
 	}
-	.layer-3QrUeG[aria-label="USER_SETTINGS"].settings-contentshowing .sidebar-CFHs9e {
+	.layer-3QrUeG.settings-contentshowing .sidebar-CFHs9e {
 		filter: brightness(60%);
 
 	}
 
-
+	/* FRIENDS LIST */
+	.tabBody-3YRQ8W {
+		background: #36393f;
+	}
 
 }
-
-
-/*
-		transform: translate(500px);
-		display: block;
-		*/
